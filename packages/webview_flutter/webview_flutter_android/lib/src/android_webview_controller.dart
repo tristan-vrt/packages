@@ -438,6 +438,11 @@ class AndroidWebViewController extends PlatformWebViewController {
     return _webView.settings.setMediaPlaybackRequiresUserGesture(require);
   }
 
+  /// Tells JavaScript to open windows automatically.
+  Future<void> setJavaScriptCanOpenWindowsAutomatically(bool flag) {
+    return _webView.settings.setJavaScriptCanOpenWindowsAutomatically(flag);
+  }
+
   /// Sets the text zoom of the page in percent.
   ///
   /// The default is 100.
